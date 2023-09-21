@@ -9,3 +9,11 @@ console.log(result);  // true
 
 result = huRegex.test(hugStr);
 console.log(result);  // true
+
+/* Complet the regex unRegex so that it matches the strings 
+run, sun, fun pun, nun and bun.  Your regex should 
+use the wildcard character. */
+
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /change/;  // Change this line
+result = unRegex.test(exampleStr);
