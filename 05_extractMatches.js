@@ -7,3 +7,11 @@ let ourRegex = /expressions/;
 let result = ourStr.match(ourRegex);
 
 console.log(result);  // ["expressions"]
+
+// Apply the .match() method to extract the string coding.
+
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /change/;  // Change this line
+result = extractStr;  // Change this line
+
+console.log(result);
