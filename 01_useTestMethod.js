@@ -6,10 +6,12 @@ const testStr = 'freeCodeCamp';
 let testRegex = /Code/;
 
 // One way to test for a regex is to use the test method.
-console.log(testRegex.test(testRegex));  // true
+console.log(testRegex.test(testStr));  // true
 
 /* Apply the regex myRegex on the string myString using
 the .test() method.*/
 let myString = "Hello, World!";
 let myRegex = /Hello/;
-let result - myRegex;  // Change this line
+let result = myRegex.test(myString);  // true
+
+console.log(result);
