@@ -9,7 +9,7 @@ matter its case.  Your regex should not match any
 abbreviations or variations with spaces.*/
 
 let myString = 'freeCodeCamp';
-let fccRegex = /change/;  // change this line
+let fccRegex = /freecodecamp/i;  // change this line
 let result = fccRegex.test(myString);
 
-console.log(result);
+console.log(result);  // true
