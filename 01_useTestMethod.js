@@ -8,3 +8,8 @@ let testRegex = /Code/;
 // One way to test for a regex is to use the test method.
 console.log(testRegex.test(testRegex));  // true
 
+/* Apply the regex myRegex on the string myString using
+the .test() method.*/
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result - myRegex;  // Change this line
