@@ -15,5 +15,7 @@ console.log(result);
 
 // Match all the letters in the string quoteSample.
 let quoteSample = "The quick brown fox jumps over the lazy dog.";
-let alphabetRegex = /change/;  // change this line
-result = alphabetRegex;  // change this line
+let alphabetRegex = /[a-z]/ig;  // change this line
+result = quoteSample.match(alphabetRegex);  // change this line
+
+console.log(result);
