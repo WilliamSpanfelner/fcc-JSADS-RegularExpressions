@@ -28,5 +28,7 @@ regex vowelRegex to find all the vowels in the string
 quoteSample. */
 
 let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
-let vowelRegex = /change/;  // Change this line
-result = vowelRegex;  // Change this line
+let vowelRegex = /[aeiou]/ig;  
+result = quoteSample.match(vowelRegex);
+
+console.log(result);
