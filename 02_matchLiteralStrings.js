@@ -16,7 +16,7 @@ console.log(result);  // false
 string waldoIsHiding with a literal match */
 
 let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
-let waldoRegex = /Waldo/; // Change this line
+let waldoRegex = /Waldo/; 
 result = waldoRegex.test(waldoIsHiding);
 
-console.log(result);
+console.log(result);  //true
