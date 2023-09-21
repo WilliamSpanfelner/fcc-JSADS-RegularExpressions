@@ -13,5 +13,7 @@ console.log(result);  // [ 'Repeat', 'Repeat', 'Repeat' ]
 string twinkleStar.*/
 
 let twinkleStar = "Twinkle, twinkle, little star";
-let starRegex = /change/;  // Change this line
-result = twinkleStar;  // Change this line
+let starRegex = /twinkle/gi;  // Change this line
+result = twinkleStar.match(starRegex);  // Change this line
+
+console.log(result);
