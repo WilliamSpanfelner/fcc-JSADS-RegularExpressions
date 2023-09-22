@@ -20,9 +20,21 @@ console.log(result);  // true
 
 // \w is also known as a shorthand character class
 
-/* Use the shorthand character class \w to countt the number
+/* Use the shorthand character class \w to count the number
 of alphanumeric characters in various quotes and strings.*/
 
 let quoteSample = "The five boxing wizards jump quickly.";
-let alphabetRegexV2 = /change/;  // Change this line
-result = quoteSample.match(alphabetRegexV2).length;
+let alphabetRegexV2 = /\w/g;  // Change this line
+result = quoteSample.match(alphabetRegexV2) //.length;
+
+console.log(alphabetRegexV2, result, result.length);  
+/*
+/\w/g [
+  'T', 'h', 'e', 'f', 'i', 'v',
+  'e', 'b', 'o', 'x', 'i', 'n',
+  'g', 'w', 'i', 'z', 'a', 'r',
+  'd', 's', 'j', 'u', 'm', 'p',
+  'q', 'u', 'i', 'c', 'k', 'l',
+  'y'
+] 31
+*/ 
