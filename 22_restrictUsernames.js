@@ -23,7 +23,10 @@ their username.
 Change the regex userCheck to fit the constraints listed 
 above.
 */
-
-let username = "JackOfAllTrades";
-let userCheck = /change/;  // Change this line
+const usernames = ['JACK', 'Jo', 'Oceans11', 'RegexGuru', 'A1', 'BadUs3rnam3', 'Z97', 'c57bT3']
+let username = usernames[0];
+let userCheck = /^[a-z][a-z]+[0-9]*$|^[a-z]\d\d+$/i;  // Change this line
 let result = userCheck.test(username);
+let matchResult = username.match(userCheck);
+
+console.log(username, userCheck, result, matchResult)
