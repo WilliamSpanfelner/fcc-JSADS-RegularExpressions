@@ -13,5 +13,6 @@ console.log(result);  // false
 at the end of the string caboose. */
 
 let caboose = "The last car on a train is the caboose";
-let lastRegex = /change/;  // Change this line
+let lastRegex = /caboose$/;  // Change this line
 result = lastRegex.test(caboose);
+console.log(result);
