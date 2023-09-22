@@ -19,3 +19,10 @@ result = shorthand.test(varNames);
 console.log(result);  // true
 
 // \w is also known as a shorthand character class
+
+/* Use the shorthand character class \w to countt the number
+of alphanumeric characters in various quotes and strings.*/
+
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /change/;  // Change this line
+result = quoteSample.match(alphabetRegexV2).length;
