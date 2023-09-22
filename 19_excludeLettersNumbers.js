@@ -17,5 +17,7 @@ of non-alphanumeric characters in various quotes and
 strings. */
 
 let quoteSample = "The five boxing wizards jump quickly.";
-let nonAlphabetRegex = /change/;  // Change this line
-result = quoteSample.match(nonAlphabetRegex).length;
+let nonAlphabetRegex = /\W/g;  // Change this line
+result = quoteSample.match(nonAlphabetRegex)  //.length;
+
+console.log(nonAlphabetRegex, result, result.length);
