@@ -11,3 +11,8 @@ let myString = "titanic";
 let myRegex = /t[a-z]*i/;
 let result = myString.match(myRegex);
 console.log(result);  // [ 'titani' ]
+
+// The same string matched lazily:
+myRegex = /t[a-z]*?i/;
+result = myString.match(myRegex);
+console.log(result);  // [ 'ti' ]
