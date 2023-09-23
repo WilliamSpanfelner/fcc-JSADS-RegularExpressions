@@ -14,5 +14,7 @@ console.log(result);  // [ ' ', ' ' ]
 whitespace characters in a string. */
 
 let sample = "Whitespace is important in separating words";
-let countWhiteSpace = /change/;  // Change this line
+let countWhiteSpace = /\s/g;  // Change this line
 result = sample.match(countWhiteSpace);
+
+console.log(result);  // [ ' ', ' ', ' ', ' ', ' ' ]
