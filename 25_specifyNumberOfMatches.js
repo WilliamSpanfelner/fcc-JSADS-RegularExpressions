@@ -25,3 +25,11 @@ result = multipleA.test(a2);
 console.log(result);  // false
 result = a2.match(multipleA);
 console.log(result);  // null
+
+
+/* Change the regex ohRegex to match the entire phrase
+Oh no only when it has 3 to 6 letter h's */
+
+let ohStr = "Ohhh no";
+let ohRegex = /change/;  // Change this line
+result = ohRegex.test(ohStr);
