@@ -13,3 +13,9 @@ result = multipleA.test(a2);
 console.log(result);  // false
 result = multipleA.test(a100);
 console.log(result);  // true
+
+/*  Change the regex haRegex to match the word Hazzah
+only when it has four or more letter z's */
+let haStr = "Hazzzzah";
+let haRegex = /change/;  // change this line
+result = haRegex.test(haStr);
