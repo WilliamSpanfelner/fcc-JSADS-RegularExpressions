@@ -17,5 +17,7 @@ console.log(result);  // true
 /*  Change the regex haRegex to match the word Hazzah
 only when it has four or more letter z's */
 let haStr = "Hazzzzah";
-let haRegex = /change/;  // change this line
+let haRegex = /Haz{4,}ah/;  // change this line
 result = haRegex.test(haStr);
+
+console.log(result);  // true
