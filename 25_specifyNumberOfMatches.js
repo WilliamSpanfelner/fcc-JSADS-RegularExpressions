@@ -31,5 +31,7 @@ console.log(result);  // null
 Oh no only when it has 3 to 6 letter h's */
 
 let ohStr = "Ohhh no";
-let ohRegex = /change/;  // Change this line
+let ohRegex = /Oh{3,6} no/;  // Change this line
 result = ohRegex.test(ohStr);
+
+console.log(result);
