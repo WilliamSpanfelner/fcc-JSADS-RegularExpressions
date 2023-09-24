@@ -12,3 +12,10 @@ result = multipleA.test(a3);
 console.log(result);  // true
 result = multipleA.test(a100);
 console.log(result);  // false
+
+/* Change the regex timRegex to match the word Timber
+only when it has four letter m's. */
+
+let timStr = "Timmmmber";
+let timRegex = /change/;  // Change this line
+result = timRegex.test(timStr);
