@@ -11,3 +11,11 @@ console.log(result);
 
 result = repeatedStr.match(repeatRegex);
 console.log(result);
+
+/* Use capture groups in reRegex to match a string that
+consists of only the same number repeated exactly three
+times separately by single spaces. */
+
+let repeatNum = "42 42 42";
+let reRegex = /change/;  // Change this line
+result = reRegex.test(repeatNum);
