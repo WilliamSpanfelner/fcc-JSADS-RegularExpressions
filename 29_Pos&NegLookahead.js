@@ -10,3 +10,9 @@ let result = quit.match(quRegex);
 console.log(result);  // [ 'q' ]
 result = noquit.match(qRegex);
 console.log(result);  // [ 'q' ]
+
+// Check a password with lookahead
+let password = "abc123"
+let checkPass = /(?=\w{3,6})(?=\D*\d)/;
+result = checkPass.test(password);
+console.log(result);
