@@ -17,5 +17,6 @@ English (favorite) and the British English (favourite)
 version of the word. */
 
 let favWord = 'favorite';
-let favRegex = /change/;  // Change this line
+let favRegex = /favou?rite/;  // Change this line
 result = favRegex.test(favWord);
+console.log(result);  // true
