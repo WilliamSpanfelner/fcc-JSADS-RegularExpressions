@@ -17,5 +17,7 @@ console.log(result);  // false
 only when it has four letter m's. */
 
 let timStr = "Timmmmber";
-let timRegex = /change/;  // Change this line
+let timRegex = /Tim{4}ber/;  // Change this line
 result = timRegex.test(timStr);
+
+console.log(result);  // true
