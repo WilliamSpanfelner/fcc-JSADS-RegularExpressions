@@ -16,6 +16,12 @@ console.log(result);
 consists of only the same number repeated exactly three
 times separately by single spaces. */
 
-let repeatNum = "42 42 42";
-let reRegex = /change/;  // Change this line
+let repeatNums = ["42\t42\t42", "42 42 42 42", "42 42 42", "100 100 100"]
+
+let repeatNum = repeatNums[0];
+let reRegex = /^(\d+)( )\1\2\1$/g;  // Change this line
 result = reRegex.test(repeatNum);
+console.log(result);
+
+result = repeatNum.match(reRegex);
+console.log(result);
