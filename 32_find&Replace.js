@@ -6,4 +6,9 @@ let wrongText = "The sky is silver.";
 let silverRegex = /silver/;
 let result = wrongText.replace(silverRegex, "blue");
 
-console.log(wrongText, result);
+console.log(wrongText, result);  // The sky is silver. The sky is blue.
+
+/* Capture groups can also be used in the first argument
+for the replace method. */
+
+console.log("Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1'));  // Camp Code
