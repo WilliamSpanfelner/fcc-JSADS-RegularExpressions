@@ -8,5 +8,10 @@ regular expressions.
 */
 
 let hello = "    Hello, World!    ";
-let wsRegex = /change/;  // Change this line
-let result = hello;  // Change this line
+let wsRegex = /^(\s+)|\s+$/g;  // Change this line
+let result = hello.match(wsRegex);
+console.log(result);
+
+result = hello.replace(wsRegex, '');  // Change this line
+console.log(result);
+
