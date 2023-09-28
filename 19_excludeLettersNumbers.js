@@ -20,4 +20,5 @@ let quoteSample = "The five boxing wizards jump quickly.";
 let nonAlphabetRegex = /\W/g;  // Change this line
 result = quoteSample.match(nonAlphabetRegex)  //.length;
 
-console.log(nonAlphabetRegex, result, result.length);
+console.log(nonAlphabetRegex, result, result.length);  
+// /\W/g [' ', ' ', ' ', ' ', ' ', '.'] 6
