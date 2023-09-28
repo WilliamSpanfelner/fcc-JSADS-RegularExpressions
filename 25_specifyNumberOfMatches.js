@@ -17,10 +17,12 @@ let result = multipleA.test(a6);
 console.log(result);  // true
 result = a6.match(multipleA);
 console.log(result);  // [ 'aaaaah' ]
+
 result = multipleA.test(a4);
 console.log(result);  // true
 result = a4.match(multipleA);
 console.log(result);  // [ 'aaaah' ]
+
 result = multipleA.test(a2);
 console.log(result);  // false
 result = a2.match(multipleA);
