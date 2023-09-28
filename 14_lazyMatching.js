@@ -24,4 +24,4 @@ wildcard . in a regular expression matches any character */
 let text = "<h1>Winter is coming</h1>";
 myRegex = /<.*?>/;
 result = text.match(myRegex);
-console.log(result);  // [ 'ti' ]
+console.log(result);  // [ '<h1>' ]
