@@ -8,7 +8,7 @@ let testRegex = /P(engu|umpk)in/;
 let result = testRegex.test(testStr);
 console.log(result);  // true
 
-/* Fix the regex so that it checks fro the names of Franklin
+/* Fix the regex so that it checks for the names of Franklin
 Roosevelt or Eleanor Roosevelt in a case sensitive manner
 and it should make concessions for middle names.
 
