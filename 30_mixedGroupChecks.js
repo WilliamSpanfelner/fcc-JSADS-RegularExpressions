@@ -19,4 +19,4 @@ depending on whether the regex mathces. */
 let myString = "Eleanor Roosevelt";
 let myRegex = /(Eleanor|Franklin|Franklin D.) Roosevelt/;  // Change this line
 result = myRegex.test(myString);  // Change this line
-console.log(result);
+console.log(result);  // true
